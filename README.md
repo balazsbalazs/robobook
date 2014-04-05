@@ -20,7 +20,6 @@ You need to have `calabash-android` installed on your machine and you need to co
   ```calabash-android console robobook.apk```
   
   If everything went well you're in the calabash console and you see a prompt like this:
-  
   ```irb(main):001:0>```
 
 5. Enter the following command into the calabash console to install the app:
