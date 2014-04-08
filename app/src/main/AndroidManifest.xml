@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".FollowRobotsActivity"
+                android:label="@string/follow_screen_title"/>
     </application>
 
 </manifest>
