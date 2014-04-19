@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="login_title">RoboBook</string>
     <string name="follow_screen_title">Follow robots you know</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
 
 </resources>

@@ -15,6 +15,7 @@ public class LoginActivity extends ActionBarActivity {
 
     private EditText mEmailEditText;
     private Button mLoginButton;
+    private Button mSignButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,14 @@ public class LoginActivity extends ActionBarActivity {
                 startActivity(new Intent(LoginActivity.this, FollowRobotsActivity.class));
             }
         });
+        mSignButton = (Button)findViewById(R.id.signin_button);
+        mSignButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
+            }
+        });
+        mSignButton.setEnabled(true);
         mEmailEditText = (EditText)findViewById(R.id.email_edittext);
         mEmailEditText.addTextChangedListener(new TextWatcher() {
             @Override
