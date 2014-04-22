@@ -34,10 +34,9 @@
     <RelativeLayout
             android:id="@+id/register_form_container"
             android:layout_marginTop="50dp"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            >
+            android:layout_gravity="center_horizontal">
 
         <LinearLayout
                 android:id="@+id/email_container"
@@ -57,7 +56,7 @@
                     android:textColor="@color/light_app_color"/>
 
             <EditText
-                    android:id="@+id/email_inout"
+                    android:id="@+id/email_input"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
@@ -146,9 +145,38 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/rating_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dob_container"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rate_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Do you like this blog?"
+                android:gravity="right"
+                android:typeface="sans"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/light_app_color"/>
+
+            <RatingBar
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/dob_label"
+                android:id="@+id/ratingBar"
+                android:stepSize="1.0"
+                android:layout_weight="0.62" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/update_container"
             android:layout_width="match_parent"
-            android:layout_below="@+id/dob_container"
+            android:layout_below="@id/rating_container"
             android:layout_height="wrap_content">
 
             <CheckBox
@@ -171,7 +199,9 @@
                 android:layout_alignBaseline="@id/check_update"
                 android:layout_toRightOf="@id/check_update"
                 android:textColor="@color/light_app_color"/>
+
         </LinearLayout>
+
 
 
     </RelativeLayout>

@@ -62,15 +62,6 @@ public class RegistrationActivity extends ActionBarActivity {
 
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.registration, menu);
-        return true;
-    }
-
     @Override
     protected Dialog onCreateDialog(int id) {
         switch (id) {
@@ -103,7 +94,7 @@ public class RegistrationActivity extends ActionBarActivity {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.radio_male:
                 if (checked)
                     break;
@@ -111,19 +102,6 @@ public class RegistrationActivity extends ActionBarActivity {
                 if (checked)
                     break;
         }
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
 }
