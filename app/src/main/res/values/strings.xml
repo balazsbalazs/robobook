@@ -7,5 +7,6 @@
     <string name="login_title">RoboBook</string>
     <string name="follow_screen_title">Follow robots you know</string>
     <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
 
 </resources>

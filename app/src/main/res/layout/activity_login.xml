@@ -112,14 +112,4 @@
             android:enabled="false"
             android:text="Login"/>
 
-    <Button
-        android:id="@+id/signin_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
-        android:layout_marginTop="20dp"
-        android:enabled="false"
-        android:text="Sign in"/>
 </LinearLayout>
