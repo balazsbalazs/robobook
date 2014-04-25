@@ -33,23 +33,24 @@
 
     <RelativeLayout
             android:id="@+id/register_form_container"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp">
 
         <LinearLayout
-                android:id="@+id/email_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            android:id="@+id/email_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <TextView
                     android:id="@+id/email_label"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
                     android:text="Email"
-                    android:gravity="right"
+                    android:gravity="left"
                     android:layout_marginRight="10dp"
                     android:typeface="sans"
                     android:textSize="18sp"
@@ -60,7 +61,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                      android:layout_marginRight="20dp"
+                    android:gravity="left"
                     android:layout_alignBaseline="@id/email_label"
                     android:layout_toRightOf="@id/email_label"
                     android:textColor="@color/light_app_color"/>
@@ -76,10 +77,10 @@
             <TextView
                     android:id="@+id/gender_label"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.3"
                     android:layout_height="wrap_content"
-                    android:text="gender"
-                    android:gravity="right"
+                    android:text="Gender"
+                    android:gravity="left"
                     android:layout_marginRight="10dp"
                     android:typeface="sans"
                     android:textSize="18sp"
@@ -90,10 +91,9 @@
                 android:orientation="horizontal"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_marginRight="20dp"
                 android:layout_alignBaseline="@id/gender_label"
                 android:layout_toRightOf="@id/gender_label"
-                android:gravity="right">
+                android:gravity="left">
                 <RadioButton android:id="@+id/radio_male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -112,19 +112,17 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_height="wrap_content"
-            android:focusableInTouchMode="false"
             android:layout_width="match_parent"
-            android:layout_weight="1"
             android:layout_below="@+id/gender_container"
             android:id="@+id/dob_container">
 
             <TextView
                 android:id="@+id/dob_label"
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="0.3"
                 android:layout_height="wrap_content"
                 android:text="DOB"
-                android:gravity="right"
+                android:gravity="left"
                 android:layout_marginRight="10dp"
                 android:typeface="sans"
                 android:textSize="18sp"
@@ -137,7 +135,6 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text='set your date of birth'
-                android:layout_marginRight="20dp"
                 android:layout_alignBaseline="@id/dob_label"
                 android:layout_toRightOf="@id/dob_label"
                 android:textColor="@color/light_app_color"/>
@@ -149,26 +146,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/dob_container"
-            android:orientation="horizontal">
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/rate_text"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="Do you like this blog?"
-                android:gravity="right"
+                android:layout_height="0dp"
+                android:text="Are you robot?"
+                android:gravity="left"
                 android:typeface="sans"
                 android:textSize="18sp"
-                android:layout_marginRight="10dp"
                 android:textColor="@color/light_app_color"/>
 
             <RatingBar
-                android:layout_width="173dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@id/dob_label"
                 android:id="@+id/ratingBar"
+                android:gravity="center_horizontal"
                 android:stepSize="1.0"
+                android:numStars="5"
                 android:layout_weight="0.62" />
 
         </LinearLayout>
@@ -187,12 +186,14 @@
                 android:textOff="no"
                 android:textOn="yes"
                 android:checked="false"
+                android:gravity="left"
                 android:layout_alignBaseline="@id/robot_question_label"
                 android:layout_toRightOf="@id/robot_question_label"/>
 
             <TextView
                 android:id="@+id/update_text"
-                android:text="Wish to receive updates from krazy robot"
+                android:text="Wish to receive updates from krazyrobot"
+                android:textSize="16sp"
                 android:layout_width="0dp"
                 android:layout_weight="6"
                 android:layout_height="wrap_content"
