@@ -30,16 +30,11 @@
         android:textSize="36sp"
         android:textColor="@color/light_app_color"/>
 
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
-        android:layout_marginTop="50dp"
-        android:text="Sign in"/>
-
+    <View
+            android:id="@+id/placeholder_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
     <Button
         android:id="@+id/signin_button"
         android:layout_width="wrap_content"
@@ -48,6 +43,38 @@
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:layout_marginTop="20dp"
-        android:text="Sign up"/>
+        android:text="Let's go"/>
 
+    <View
+            android:id="@+id/placeholder_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/already_have_an_account_text"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Already have an account?"
+                android:textSize="16dp"/>
+
+        <TextView
+                android:padding="16dp"
+                android:textSize="16dp"
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/orange_selector"
+                android:text="Log in"/>
+
+            </LinearLayout>
 </LinearLayout>

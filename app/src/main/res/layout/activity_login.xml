@@ -98,7 +98,6 @@
                     android:layout_toRightOf="@id/robot_question_label"/>
         </LinearLayout>
 
-
     </RelativeLayout>
 
     <Button
