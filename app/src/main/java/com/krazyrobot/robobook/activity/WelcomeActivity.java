@@ -1,9 +1,10 @@
-package com.krazyrobot.robobook;
+package com.krazyrobot.robobook.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
+import com.krazyrobot.robobook.R;
 
 
 public class WelcomeActivity extends ActionBarActivity {

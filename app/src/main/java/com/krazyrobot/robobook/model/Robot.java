@@ -1,4 +1,4 @@
-package com.krazyrobot.robobook;
+package com.krazyrobot.robobook.model;
 
 public class Robot {
     private String mName;

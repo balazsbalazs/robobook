@@ -1,8 +1,10 @@
-package com.krazyrobot.robobook;
+package com.krazyrobot.robobook.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
+import com.krazyrobot.robobook.adapter.FollowAdapter;
+import com.krazyrobot.robobook.R;
 
 public class FollowRobotsActivity extends Activity {
     @Override

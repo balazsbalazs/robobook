@@ -1,17 +1,16 @@
-package com.krazyrobot.robobook;
+package com.krazyrobot.robobook.activity;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import com.krazyrobot.robobook.R;
 
 import java.util.Calendar;
 
